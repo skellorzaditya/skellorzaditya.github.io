@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        ul.nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 2px solid #6bd9fa;
+            background-color: #ffffff;
+        }
+        
+        ul.nav li {
+            float: left;
+        }
+        
+        ul.nav li a {
+            display: block;
+            color: rgb(255, 0, 0);
+            text-align: center;
+            padding: 10px 10px;
+            text-decoration: none;
+        }
+        
+        ul.nav li a:hover {
+            background-color: #ddd;
+        }
+        
+        body {
+            background-color: bisque;
+        }
+        
+        h1 {
+            color: purple;
+        }
+        
+        #red-text {
+            color: red;
+        }
+        
+        #blue-text {
+            color: blue;
+        }
+        
+        .small-text {
+            font-size: 5px;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid rgb(143, 183, 243);
+            border-collapse: collapse;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Some html stuff first</h1>
+    <div class="bodyContainer ">
+        <ul class="nav">
+            <li>
+                <a href="index.html ">Home</a>
+            </li>
+            <li>
+                <a href="about.html ">About</a>
+            </li>
+            <li>
+                <a href="gallery.html ">Gallery</a>
+            </li>
+        </ul>
+        <!--To make a List...-->
+        <ul>
+            <li>Aplles</li>
+            <li>Oranges</li>
+            <li>Banana</li>
+        </ul>
+        <!--This is how you do odered list-->
+        <h2>Top movies</h2>
+        <ol>
+            <li>My Neighbor Totoro</li>
+            <li>THe half of it</li>
+            <li>Inception</li>
+        </ol>
+        <h2>Student Birthday's</h2>
+        <table>
+            <tr>
+                <th>Last</th>
+                <th>First</th>
+                <th>Birthday</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>Cooper</td>
+                <td>02/01</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>Pheobe</td>
+                <td>10/02</td>
+            </tr>
+        </table>
+
+
+        <h2>CSS</h2>
+        <p style="color: blue ">I want this text to be blue</p>
+        <p style="color: red ">I want this text to be red</p>
+        <p style="font-size: 60px ">I want this text to be really big</p>
+        <p style="font-size: 10px ">I want this text to be really small</p>
+        <p style="color:orange; font-size:24px; text-align:centered ">I want this to be oranged, 24px, and centered</p>
+
+        <h2>Let's do some internal css with selectors</h2>
+        <p id="blue-text ">make this blue</p>
+        <p id="red-text ">make this red</p>
+        <p class="small-text ">make this small</p>
+        <p class="small-text ">make this small too</p>
+        <p>make this orange, 24px, and centered</p>
+    </div>
+</body>
+
+</html>
