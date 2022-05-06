@@ -11,13 +11,45 @@
         .center {
             text-align: center;
         }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 40% 40% 20%;
+            gap: 5px 5px;
+        }
+        
+        .grid-item {
+            background-color: gray;
+            text-align: center;
+            font-size: 15px;
+            padding: 20px;
+        }
+        
+        .main {
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 3;
+            text-align: left;
+        }
+        
+        .sidenav {
+            grid-column: 3;
+            grid-row: 1 / span 3;
+            text-align: left;
+        }
     </style>
 </head>
 
 <body>
-    <h1 class="center">How You Can Help</h1>
-    <h2 class="center">Helping in the your Community</h2>
-    <h2 class="center">Resources</h2>
+    <div class="grid-container">
+        <div class="grid-item main">
+            <h1 class="center">How You Can Help</h1>
+            <h2 class="center">Helping in the your Community</h2>
+        </div>
+        <div class="grid-item sidenav">
+            <h2 class="center">Resources</h2>
+            <p></p>
+        </div>
+    </div>
 </body>
 
 </html>
