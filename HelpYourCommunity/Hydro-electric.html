@@ -40,6 +40,22 @@
             grid-row: 1;
             text-align: center;
         }
+        
+        .image1 {
+            grid-column: 1;
+            grid-row: 2;
+            text-align: center;
+        }
+        
+        .main2 {
+            grid-column: 1;
+            grid-row: 3;
+            text-align: center;
+        }
+        
+        body {
+            background-color: gray;
+        }
     </style>
 </head>
 
@@ -67,13 +83,17 @@
             <i class="fas fa-bars"></i>
         </a>
     </nav>
-    <div>
+    <div class="grid-container">
         <div class="grid-item main1">
             <h1>Dam! Hydro-electric Energy</h1>
             <h2>How Does Hydro-electric Energy Work?</h2>
         </div>
-        <img class="centerimg" src="Images/Dam.jpg" alt="A Dam">
-        <h2 class="center">Pros and Cons</h2>
+        <div class="grid-item image1">
+            <img class="centerimg" src="Images/Dam.jpg" alt="A Dam">
+        </div>
+        <div class="grid-item main2">
+            <h2>Pros and Cons</h2>
+        </div>
     </div>
     <div class="footer">
         <footer>Created by &copy; Jesse Li</footer>
