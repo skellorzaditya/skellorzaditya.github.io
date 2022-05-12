@@ -27,14 +27,23 @@
         
         .main {
             grid-column: 1 / span 2;
-            grid-row: 1 / span 3;
+            grid-row: 1;
             text-align: left;
+        }
+        
+        .main1 {
+            grid-column: 1 / span 2;
+            grid-row: 2;
         }
         
         .sidenav {
             grid-column: 3;
             grid-row: 1 / span 3;
             text-align: left;
+        }
+        
+        a {
+            color: lightskyblue;
         }
     </style>
 </head>
@@ -74,6 +83,7 @@
                 <a href="https://www.eia.gov/" target="_blank">U.S. Energy Information Administration website</a>
             </li>
         </div>
+        <div class="grid-item main1"></div>
     </div>
     <div class="footer">
         <footer>Created by &copy; Jesse Li </footer>
