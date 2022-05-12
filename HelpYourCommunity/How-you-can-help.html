@@ -27,8 +27,13 @@
         
         .main {
             grid-column: 1 / span 2;
-            grid-row: 1 / span 3;
+            grid-row: 1;
             text-align: left;
+        }
+        
+        .main1 {
+            grid-column: 1 / span 2;
+            grid-row: 2;
         }
         
         .sidenav {
@@ -49,10 +54,10 @@
         </div>
         <!-- Menu -->
         <ul class="navbar__menu">
-            <li><a href="solar.html">Solar</a></li>
-            <li><a href="wind.html">Wind</a></li>
-            <li><a href="Hydro-electric.html">Hydro-Electric</a></li>
-            <li><a href="How-you-can-help.html">How You Can Help</a></li>
+            <li class="solar"><a href="solar.html">Solar</a></li>
+            <li class="wind"><a href="wind.html ">Wind</a></li>
+            <li class="hydro-electric "><a href="Hydro-electric.html ">Hydro-Electric</a></li>
+            <li class="how-can-you-help "><a href="How-you-can-help.html ">How You Can Help</a></li>
         </ul>
         <!-- Icons -->
         <ul class="navbar__icons">
@@ -71,9 +76,10 @@
         <div class="grid-item sidenav">
             <h2 class="center">Resources</h2>
             <li class="center">
-                <a href="https://www.eia.gov/" target="_blank">U.S. Energy Information Administration website</a>
+                <a style="color:lightskyblue;" href="https://www.eia.gov/" target="_blank">U.S. Energy Information Administration website</a>
             </li>
         </div>
+        <div class="grid-item main1"></div>
     </div>
     <div class="footer">
         <footer>Created by &copy; Jesse Li </footer>

@@ -56,8 +56,23 @@ a {
     padding: 8px 12px;
 }
 
-.navbar__menu li:hover {
-    background-color: #d49466;
+.navbar__menu li.solar:hover {
+    background-color: yellow;
+    border-radius: 4px;
+}
+
+.navbar__menu li.wind:hover {
+    background-color: gray;
+    border-radius: 4px;
+}
+
+.navbar__menu li.hydro-electric:hover {
+    background-color: lightblue;
+    border-radius: 4px;
+}
+
+.navbar__menu li.how-can-you-help:hover {
+    background-color: lightgreen;
     border-radius: 4px;
 }
 
