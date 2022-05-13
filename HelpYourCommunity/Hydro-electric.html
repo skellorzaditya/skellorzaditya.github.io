@@ -25,6 +25,7 @@
         .grid-container {
             display: grid;
             grid-template-rows: 30% 20% 30% 20%;
+            grid-template-columns: auto auto;
             gap: 5px 5px;
         }
         
@@ -36,29 +37,39 @@
         }
         
         .main1 {
-            grid-column: 1;
+            grid-column: 1 / span 2;
             grid-row: 1;
             text-align: center;
         }
         
         .main2 {
+            grid-column: 1 / span 2;
+            grid-row: 4;
+        }
+        
+        .Pros {
             grid-column: 1;
             grid-row: 3;
         }
         
-        .main3 {
-            grid-column: 1;
-            grid-row: 4;
+        .Cons {
+            grid-column: 2;
+            grid-row: 3;
         }
         
         .img1 {
-            grid-column: 1;
+            grid-column: 1 / span 2;
             grid-row: 2;
         }
         
-        .navbar__menu li:hover {
-            background-color: blue;
-            border-radius: 4px;
+        p {
+            font-size: large;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid black;
         }
     </style>
 </head>
@@ -91,14 +102,22 @@
         <div class="grid-item main1 ">
             <h1>Dam! Hydro-electric Energy</h1>
             <h2>How Does Hydro-electric Energy Work?</h2>
+            <p>Hydro-electic energy is the process of using the natural flow of water to produce energy. It can come in all shapes and sizes, from massive dams to water wheels you may see by the side of a pond. How do these methods turn the flow of water
+                of water into energy? Flowing water turns a wheel, and the energy from spinning the wheel is then converted into energy. Dams work by funneling the water into the path of a wheel and then funneling the water out the other side.</p>
         </div>
         <div class="grid-item img1">
             <img class="centerimg " src="Images/Dam.jpg " alt="A Dam ">
         </div>
-        <div class="grid-item main2">
-            <h2 class="center ">Pros and Cons</h2>
+        <div class="grid-item Pros">
+            <h2 class="center">Pros</h2>
+            <li>
+                Hydro-electric is a clean form of energy, releasing little to no pollution and CO2.
+            </li>
         </div>
-        <div class="grid-item main3">
+        <div class="grid-item Cons">
+            <h2 class="center">Cons</h2>
+        </div>
+        <div class="grid-item main2">
             <h2>Resources</h2>
         </div>
     </div>
