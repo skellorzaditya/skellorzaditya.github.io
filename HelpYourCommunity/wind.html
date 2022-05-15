@@ -21,7 +21,6 @@
         
         .grid-item {
             background-color: rgb(179, 175, 164);
-            text-align: center;
             font-size: 16px;
             padding: 20px;
         }
@@ -34,6 +33,7 @@
         .main-image {
             grid-column: 1 / span 3;
             grid-row: 2;
+            text-align: center;
         }
         
         .main1 {
@@ -59,6 +59,75 @@
         .support2 {
             grid-column: 3 / span 1;
             grid-row: 6;
+        }
+        
+        .container {
+            box-sizing: border-box;
+        }
+        
+        .cursor {
+            cursor: pointer;
+        }
+        
+        .next,
+        .prev {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        
+        .next:hover,
+        .prev:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .numbertext {
+            color: #000000;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        
+        .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .column {
+            float: left;
+            width: 16.66%;
+        }
+        
+        .demo {
+            opacity: 0.6;
+        }
+        
+        .active,
+        .demo:hover {
+            opacity: 1;
         }
     </style>
 </head>
@@ -89,64 +158,171 @@
     <div class="grid-container">
         <div class=" grid-item title">
             <h1 class="center">
-                Wind Energy? I'm a big fan!
+                Wind Energy? I'm A Big Fan!
             </h1>
         </div>
         <div class="grid-item main-image">
-            <img src="Images/Wind.jpg" alt="Wind Turbines" width="1000" length="1570">
+            <!--This entire section to implement a image slide show was a way I challenged myself, I got the idea from W3 schools btw.-->
+            <div class="container">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="Images/Wind.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="Images/Wind2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="Images/Wind3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="Images/Wind4.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="Images/Wind5.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="Images/Wind6.jpeg" style="width:100%">
+                </div>
+                <!--This caption tag was working but It stopped working and I couldn't figure out why.-->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="Images/Wind.jpg" style="width:100%; height:150px;" onclick="currentSlide(1)" ; alt="Wind Turbines on a Hill">
+                        <p>Wind Turbines on a Hill</p>
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Images/Wind2.jpg" style="width:100%; height:150px;" onclick="currentSlide(2)" ; alt="Wind Turbines in Sunlight">
+                        <p>Wind Turbines in Sunlight</p>
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Images/Wind3.jpg" style="width:100%; height:150px;" onclick="currentSlide(3)" ; alt="Offshore Windturbine Graphic">
+                        <p>Offshore Windturbine Graphic</p>
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Images/Wind4.jpg" style="width:100%; height:150px;" onclick="currentSlide(4)" ; alt="Wind Turbines above Low Clouds">
+                        <p>Wind Turbines above Low Clouds</p>
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Images/Wind5.jpg" style="width:100%; height:150px;" onclick="currentSlide(5)" ; alt="Newer Model of Wind Turbine">
+                        <p>Newer Model of Wind Turbine</p>
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Images/Wind6.jpeg" style="width:100%; height:150px; " onclick="currentSlide(6) " ; alt="Man Reparing Wind Turbine ">
+                        <p> Man Reparing Wind Turbine</p>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <div class="grid-item main1 ">
-            <h2 class="center">Overview</h2>
+            <h2 class="center ">Overview</h2>
             <p>Wind power is mostly collected through wind turbines. Wind turbines look like large spinning fans blown in the wind and usually are in open hill-filled areas. Wind turbines work by having their rotor blades spun by gusts of wind. These spinning
-                blades turn a generator which creates clean energy which is green, sustainable and harmless to the ecosystem. Wind turbines are found all across the world, whether on land or sea, and only need a strong wind current to operate. </p>
+                blades turn a generator which creates clean energy which is green, sustainable and harmless to the ecosystem. Wind turbines are found all across the world, whether on land or sea, and only need a strong wind current to operate.
+            </p>
         </div>
 
 
         <div class="grid-item main2 ">
-            <h2 class="center">Current Developments</h2>
+            <h2 class="center ">Current Developments</h2>
             <p>Currently, wind turbines can be built and set-up on land and sea and have only become more available since the mid-1940's when they first came into use. The global wind power market has been growing rapidly since the 2010s and has been providing.
                 stable jobs of further research as well as development. The need for a clean and easy sustainable energy source has been a point of discussion for several decades and wind power might just be the answer.</p>
         </div>
         <div class="grid-item main3 ">
-            <h2 class="center">History</h2>
+            <h2 class="center ">History</h2>
             <p>Wind energy has been harnessed for over a millennia in the form of sailboats and water pumps. Over the centuries, this art has become more precise and useful. Wind has always been used to harness natural resources, whether that be water pumps,
                 grain and wood harvesting, and many other forms. Now-a-days the next natural resource is what would be collected, Energy! Wind power serves the same purpose as always, just on a much larger scale and will only continue to improve.</p>
         </div>
         <div class="grid-item support1 ">
-            <h2 class="center">Pros</h2>
+            <h2 class="center ">Pros</h2>
             <ul>
                 <li>
                     Wind power has created 100,000+ jobs over the last century and that number continues to grow as nations have begun to see how useful wind energy can be to create energy.
                 </li>
+                <p></p>
                 <li>
                     Wind is a clean and reusable energy source and, as such, mankind will never need to worry about running out.
                 </li>
+                <p></p>
                 <li>
                     Wind turbines can be placed virtually anywhere, meaning the wind power business can continue to grow exponentially.
                 </li>
             </ul>
         </div>
         <div class="grid-item support2 ">
-            <h2 class="center">Cons</h2>
+            <h2 class="center ">Cons</h2>
             <ul>
                 <li>
                     Wind turbines cause noise pollution which can disturb both people and local wildlife.
                 </li>
+                <p></p>
                 <li>
                     Flying animals have been known to occasionally fly into wind turbines, which is a danger to both the animal and the wind turbine.
                 </li>
+                <p></p>
                 <li>
-                    Many wind turbines need to be constructed far from cities and towns because of noise pollution which means more infrastructure is needed to move energy around and this makes them harder to repair in case of damages. Many wind turbines need to be constructed
-                    far from cities and towns because of noise pollution which means more infrastructure is needed to move them.
+                    Many wind turbines need to be constructed far from cities and towns because of noise pollution which means more infrastructure is needed to move energy around and this makes them harder to repair in case of damages.
                 </li>
+                <p></p>
+                <li>
+                    Many wind turbines need to be constructed far from cities and towns because of noise pollution which means more infrastructure is needed to move them.
+                </li>
+                <p></p>
                 <li>
                     Unfortunately wind turbines are also quite expensive to construct.
                 </li>
             </ul>
         </div>
 
-        <footer class="footer ">Page Made By: Cooper Affleck </footer>
     </div>
+    <footer class="footer ">Page Made By: Cooper Affleck </footer>
+    <!--Im not going to lie, I dont know enough about java to do this on my own so I used what W3 school provided.-->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides ");
+            let dots = document.getElementsByClassName("demo ");
+            let captionText = document.getElementById("caption ");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none ";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active ", " ");
+            }
+            slides[slideIndex - 1].style.display = "block ";
+            dots[slideIndex - 1].className += " active ";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
 </body>
 
 </html>
