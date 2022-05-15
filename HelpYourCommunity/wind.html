@@ -13,11 +13,10 @@
             text-align: center;
         }
         
-        .caption-container {
-            text-align: center;
-            background-color: #222;
-            padding: 2px 16px;
-            color: white;
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
         }
         
         .grid-item {
@@ -129,14 +128,6 @@
         .active,
         .demo:hover {
             opacity: 1;
-        }
-        
-        .vertical-center {
-            margin: 0;
-            position: absolute;
-            top: 245%;
-            -ms-transform: translateY(50%);
-            transform: translateY(50%);
         }
     </style>
 </head>
@@ -295,8 +286,8 @@
             </ul>
         </div>
 
-        <footer class="footer ">Page Made By: Cooper Affleck </footer>
     </div>
+    <footer class="footer ">Page Made By: Cooper Affleck </footer>
     <!--Im not going to lie, I dont know enough about java to do this on my own so I used what W3 school provided.-->
     <script>
         let slideIndex = 1;
