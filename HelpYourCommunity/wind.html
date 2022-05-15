@@ -13,10 +13,11 @@
             text-align: center;
         }
         
-        .grid-container {
-            display: grid;
-            grid-template-columns: auto auto auto;
-            grid-gap: 10px;
+        .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
         }
         
         .grid-item {
@@ -201,36 +202,45 @@
                     <div class="numbertext">6 / 6</div>
                     <img src="Images/Wind6.jpeg" style="width:100%">
                 </div>
+                <!--This caption tag was working but It stopped working and I couldn't figure out why.-->
                 <div class="caption-container">
                     <p id="caption"></p>
                 </div>
 
                 <div class="row">
                     <div class="column">
-                        <img class="demo cursor" src="Images/Wind.jpg" style="width:100%; height:150px;" onclick="currentSlide(1)" alt="Wind Turbines on a Hill">
+                        <img class="demo cursor" src="Images/Wind.jpg" style="width:100%; height:150px;" onclick="currentSlide(1)" ; alt="Wind Turbines on a Hill">
+                        <p>Wind Turbines on a Hill</p>
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="Images/Wind2.jpg" style="width:100%; height:150px;" onclick="currentSlide(2)" alt="Wind Turbines in Sunlight">
+                        <img class="demo cursor" src="Images/Wind2.jpg" style="width:100%; height:150px;" onclick="currentSlide(2)" ; alt="Wind Turbines in Sunlight">
+                        <p>Wind Turbines in Sunlight</p>
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="Images/Wind3.jpg" style="width:100%; height:150px;" onclick="currentSlide(3)" alt="Offshore Windturbine Graphic">
+                        <img class="demo cursor" src="Images/Wind3.jpg" style="width:100%; height:150px;" onclick="currentSlide(3)" ; alt="Offshore Windturbine Graphic">
+                        <p>Offshore Windturbine Graphic</p>
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="Images/Wind4.jpg" style="width:100%; height:150px;" onclick="currentSlide(4)" alt="Wind Turbines above Low Clouds">
+                        <img class="demo cursor" src="Images/Wind4.jpg" style="width:100%; height:150px;" onclick="currentSlide(4)" ; alt="Wind Turbines above Low Clouds">
+                        <p>Wind Turbines above Low Clouds</p>
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="Images/Wind5.jpg" style="width:100%; height:150px;" onclick="currentSlide(5)" alt="Newer Model of Wind Turbine">
+                        <img class="demo cursor" src="Images/Wind5.jpg" style="width:100%; height:150px;" onclick="currentSlide(5)" ; alt="Newer Model of Wind Turbine">
+                        <p>Newer Model of Wind Turbine</p>
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="Images/Wind6.jpeg" style="width:100%; height:150px; " onclick="currentSlide(6) " alt="Man Reparing Wind Turbine ">
+                        <img class="demo cursor" src="Images/Wind6.jpeg" style="width:100%; height:150px; " onclick="currentSlide(6) " ; alt="Man Reparing Wind Turbine ">
+                        <p> Man Reparing Wind Turbine</p>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="grid-item main1 ">
             <h2 class="center ">Overview</h2>
             <p>Wind power is mostly collected through wind turbines. Wind turbines look like large spinning fans blown in the wind and usually are in open hill-filled areas. Wind turbines work by having their rotor blades spun by gusts of wind. These spinning
-                blades turn a generator which creates clean energy which is green, sustainable and harmless to the ecosystem. Wind turbines are found all across the world, whether on land or sea, and only need a strong wind current to operate. </p>
+                blades turn a generator which creates clean energy which is green, sustainable and harmless to the ecosystem. Wind turbines are found all across the world, whether on land or sea, and only need a strong wind current to operate.
+            </p>
         </div>
 
 
