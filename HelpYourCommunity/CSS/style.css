@@ -1,5 +1,3 @@
-/* Global */
-
 :root {
     --text-color: black;
     --background-color: white;
@@ -109,4 +107,972 @@ a {
     background-color: black;
     color: white;
     text-align: center;
+}
+
+
+/* Containers */
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container.\31 25\25 {
+    width: 100%;
+    max-width: 1700px;
+    min-width: 1360px;
+}
+
+.container.\37 5\25 {
+    width: 1020px;
+}
+
+.container.\35 0\25 {
+    width: 680px;
+}
+
+.container.\32 5\25 {
+    width: 340px;
+}
+
+.container {
+    width: 1360px;
+}
+
+
+/* Grid */
+
+.row {
+    border-bottom: solid 1px transparent;
+    box-sizing: border-box;
+}
+
+.row>* {
+    float: left;
+    box-sizing: border-box;
+}
+
+.row:after,
+.row:before {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.row.uniform>*> :first-child {
+    margin-top: 0;
+}
+
+.row.uniform>*> :last-child {
+    margin-bottom: 0;
+}
+
+.row.\30 \25>* {
+    padding: 0px 0 0 0px;
+}
+
+.row.\30 \25 {
+    margin: 0px 0 -1px 0px;
+}
+
+.row.uniform.\30 \25>* {
+    padding: 0px 0 0 0px;
+}
+
+.row.uniform.\30 \25 {
+    margin: 0px 0 -1px 0px;
+}
+
+.row>* {
+    padding: 50px 0 0 50px;
+}
+
+.row {
+    margin: -50px 0 -1px -50px;
+}
+
+.row.uniform>* {
+    padding: 50px 0 0 50px;
+}
+
+.row.uniform {
+    margin: -50px 0 -1px -50px;
+}
+
+.row.\32 00\25>* {
+    padding: 100px 0 0 100px;
+}
+
+.row.\32 00\25 {
+    margin: -100px 0 -1px -100px;
+}
+
+.row.uniform.\32 00\25>* {
+    padding: 100px 0 0 100px;
+}
+
+.row.uniform.\32 00\25 {
+    margin: -100px 0 -1px -100px;
+}
+
+.row.\31 50\25>* {
+    padding: 75px 0 0 75px;
+}
+
+.row.\31 50\25 {
+    margin: -75px 0 -1px -75px;
+}
+
+.row.uniform.\31 50\25>* {
+    padding: 75px 0 0 75px;
+}
+
+.row.uniform.\31 50\25 {
+    margin: -75px 0 -1px -75px;
+}
+
+.row.\35 0\25>* {
+    padding: 25px 0 0 25px;
+}
+
+.row.\35 0\25 {
+    margin: -25px 0 -1px -25px;
+}
+
+.row.uniform.\35 0\25>* {
+    padding: 25px 0 0 25px;
+}
+
+.row.uniform.\35 0\25 {
+    margin: -25px 0 -1px -25px;
+}
+
+.row.\32 5\25>* {
+    padding: 12.5px 0 0 12.5px;
+}
+
+.row.\32 5\25 {
+    margin: -12.5px 0 -1px -12.5px;
+}
+
+.row.uniform.\32 5\25>* {
+    padding: 12.5px 0 0 12.5px;
+}
+
+.row.uniform.\32 5\25 {
+    margin: -12.5px 0 -1px -12.5px;
+}
+
+.\31 2u,
+.\31 2u\24 {
+    width: 100%;
+    clear: none;
+    margin-left: 0;
+}
+
+.\31 1u,
+.\31 1u\24 {
+    width: 91.6666666667%;
+    clear: none;
+    margin-left: 0;
+}
+
+.\31 0u,
+.\31 0u\24 {
+    width: 83.3333333333%;
+    clear: none;
+    margin-left: 0;
+}
+
+.\39 u,
+.\39 u\24 {
+    width: 75%;
+    clear: none;
+    margin-left: 0;
+}
+
+.\38 u,
+.\38 u\24 {
+    width: 66.6666666667%;
+    clear: none;
+    margin-left: 0;
+}
+
+.\37 u,
+.\37 u\24 {
+    width: 58.3333333333%;
+    clear: none;
+    margin-left: 0;
+}
+
+.\36 u,
+.\36 u\24 {
+    width: 50%;
+    clear: none;
+    margin-left: 0;
+}
+
+.\35 u,
+.\35 u\24 {
+    width: 41.6666666667%;
+    clear: none;
+    margin-left: 0;
+}
+
+.\34 u,
+.\34 u\24 {
+    width: 33.3333333333%;
+    clear: none;
+    margin-left: 0;
+}
+
+.\33 u,
+.\33 u\24 {
+    width: 25%;
+    clear: none;
+    margin-left: 0;
+}
+
+.\32 u,
+.\32 u\24 {
+    width: 16.6666666667%;
+    clear: none;
+    margin-left: 0;
+}
+
+.\31 u,
+.\31 u\24 {
+    width: 8.3333333333%;
+    clear: none;
+    margin-left: 0;
+}
+
+.\-11u {
+    margin-left: 91.66667%;
+}
+
+.\-10u {
+    margin-left: 83.33333%;
+}
+
+.\-9u {
+    margin-left: 75%;
+}
+
+.\-8u {
+    margin-left: 66.66667%;
+}
+
+.\-7u {
+    margin-left: 58.33333%;
+}
+
+.\-6u {
+    margin-left: 50%;
+}
+
+.\-5u {
+    margin-left: 41.66667%;
+}
+
+.\-4u {
+    margin-left: 33.33333%;
+}
+
+.\-3u {
+    margin-left: 25%;
+}
+
+.\-2u {
+    margin-left: 16.66667%;
+}
+
+.\-1u {
+    margin-left: 8.33333%;
+}
+
+
+/* Basic */
+
+body {
+    background: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17pt;
+    line-height: 1.75em;
+    color: black;
+}
+
+.dark {
+    color: whitesmoke;
+}
+
+input,
+textarea,
+select {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17pt;
+    line-height: 1.75em;
+    color: #888;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #666;
+    margin: 0 0 1em 0;
+    font-weight: 100;
+    line-height: 1.5em;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+strong,
+b {
+    font-weight: 400;
+    color: inherit;
+}
+
+.dark strong,
+.dark b {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+a {
+    transition: border-bottom-color 0.25s ease-in-out;
+    color: inherit;
+    text-decoration: none;
+    border-bottom: dotted 1px rgba(0, 0, 0, 0.25);
+}
+
+a:hover {
+    border-bottom-color: transparent;
+}
+
+.dark a {
+    color: #fff;
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+.dark a:hover {
+    border-bottom-color: rgba(255, 255, 255, 0);
+}
+
+sub {
+    position: relative;
+    top: 0.5em;
+    font-size: 0.8em;
+}
+
+sup {
+    position: relative;
+    top: -0.5em;
+    font-size: 0.8em;
+}
+
+hr {
+    border: 0;
+    border-top: solid 1px #e6e6e6;
+    margin: 2em 0 2em 0;
+}
+
+.dark hr {
+    border-top-color: rgba(255, 255, 255, 0.5);
+}
+
+blockquote {
+    border-left: solid 0.25em #e6e6e6;
+    padding: 1em 0 1em 2em;
+    font-style: italic;
+}
+
+.dark blockquote {
+    border-left-color: rgba(255, 255, 255, 0.5);
+}
+
+p,
+ul,
+ol,
+dl,
+table {
+    margin-bottom: 1em;
+}
+
+p {
+    text-align: justify;
+}
+
+header {
+    margin-bottom: 1em;
+}
+
+header h1,
+header h2,
+header h3,
+header h4,
+header h5,
+header h6 {
+    margin: 0;
+}
+
+header p {
+    display: block;
+    margin: 0;
+    padding: 0.25em 0 0.5em 0;
+}
+
+footer {
+    padding-top: 1.5em;
+}
+
+br.clear {
+    clear: both;
+}
+
+.featured {
+    text-align: center;
+}
+
+.featured p {
+    text-align: center;
+}
+
+
+/* Sections/Article */
+
+section,
+article {
+    margin-bottom: 3em;
+}
+
+section> :last-child,
+article> :last-child,
+section:last-child,
+article:last-child {
+    margin-bottom: 0;
+}
+
+.row>section,
+.row>article {
+    margin-bottom: 0;
+}
+
+
+/* Image */
+
+.image {
+    position: relative;
+    display: inline-block;
+    border: 0;
+}
+
+.image:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("Images/renewable_energy_sources-e1551858601606.jpg");
+}
+
+.image img {
+    display: block;
+    width: 100%;
+    border-radius: 0.5em;
+}
+
+.image.featured {
+    display: block;
+    width: 100%;
+    margin: 0 0 2em 0;
+}
+
+.image.fit {
+    display: block;
+    width: 100%;
+}
+
+.image.left {
+    float: left;
+    margin: 0 2em 2em 0;
+}
+
+.image.centered {
+    display: block;
+    margin: 0 0 2em 0;
+}
+
+.image.centered img {
+    margin: 0 auto;
+    width: auto;
+}
+
+
+/* List */
+
+ul.default {
+    list-style: disc;
+    padding-left: 1em;
+}
+
+ul.default li {
+    padding-left: 0.5em;
+}
+
+ul.icons {
+    cursor: default;
+}
+
+ul.icons li {
+    display: inline-block;
+    padding-left: 0.75em;
+}
+
+ul.icons a {
+    transition: background-color 0.25s ease-in-out;
+    display: inline-block;
+    width: 2.75em;
+    height: 2.75em;
+    line-height: 2.8em;
+    text-align: center;
+    border: 0;
+    box-shadow: inset 0 0 0 1px #e6e6e6;
+    border-radius: 100%;
+    color: #aaa;
+}
+
+ul.icons a:hover {
+    background: rgba(0, 0, 0, 0.025);
+}
+
+ul.menu {
+    cursor: default;
+}
+
+ul.menu li {
+    display: inline-block;
+    line-height: 1em;
+    border-left: solid 1px #e6e6e6;
+    padding: 0 0 0 0.5em;
+    margin: 0 0 0 0.5em;
+}
+
+ul.menu li:first-child {
+    border-left: 0;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+ul.actions {
+    cursor: default;
+}
+
+ul.actions li {
+    display: inline-block;
+    margin: 0 0 0 0.5em;
+}
+
+ul.actions li:first-child {
+    margin-left: 0;
+}
+
+ol.default {
+    list-style: decimal;
+    padding-left: 1.25em;
+}
+
+ol.default li {
+    padding-left: 0.25em;
+}
+
+
+/* Form */
+
+form .actions {
+    margin-bottom: 0;
+}
+
+form label {
+    display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select,
+form .select,
+form textarea {
+    transition: all 0.25s ease-in-out;
+    appearance: none;
+    display: block;
+    box-shadow: inset 0 0 0 1px #e6e6e6;
+    background: #f8f8f8;
+    width: 100%;
+    padding: 0.85em 1em 0.85em 1em;
+    border-radius: 0.25em;
+    border: 0;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form select:focus,
+form .select:focus,
+form textarea:focus {
+    outline: 0;
+    box-shadow: inset 0 0 0 1px #afd9e0;
+    background: #fcfcfc;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select {
+    line-height: 1.25em;
+}
+
+form textarea {
+    min-height: 13em;
+}
+
+form select {
+    position: relative;
+}
+
+form select option:not(:checked) {
+    color: #000;
+}
+
+form .select {
+    position: relative;
+    padding: 0;
+    overflow-x: hidden;
+    outline: 0;
+}
+
+form .select select {
+    width: calc(100% + 2em);
+    background: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+    cursor: pointer;
+}
+
+form .select select::-moz-focus-inner {
+    border: 0;
+    outline: 0;
+}
+
+form .select:before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    right: 1em;
+    width: 1.25em;
+    height: 75%;
+    background: url("images/arrow.svg") center center no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+
+/* Table */
+
+table {
+    width: 100%;
+}
+
+table.default {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.default tbody tr {
+    border: solid 1px #e6e6e6;
+}
+
+table.default tbody tr:nth-child(2n+2) {
+    background: #f8f8f8;
+}
+
+table.default td {
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+table.default th {
+    text-align: left;
+    padding: 0.5em 1em 1em 1em;
+}
+
+table.default tfoot td {
+    padding-top: 1em;
+}
+
+.dark table.default tbody tr {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.dark table.default tbody tr:nth-child(2n+2) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+/* Button */
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button,
+.button {
+    transition: all 0.25s ease-in-out;
+    position: relative;
+    display: inline-block;
+    background: #3d3d3d;
+    padding: 0.85em 3em 0.85em 3em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    border: 0;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover,
+.button:hover {
+    background: #4f4f4f;
+}
+
+input[type="button"].alt,
+input[type="submit"].alt,
+input[type="reset"].alt,
+button.alt,
+.button.alt {
+    color: inherit;
+    box-shadow: inset 0 0 0 1px #e6e6e6;
+    background: none;
+}
+
+input[type="button"].alt:hover,
+input[type="submit"].alt:hover,
+input[type="reset"].alt:hover,
+button.alt:hover,
+.button.alt:hover {
+    background: rgba(0, 0, 0, 0.025);
+}
+
+.dark input[type="button"],
+.dark input[type="submit"],
+.dark input[type="reset"],
+.dark button,
+.dark .button {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: inset 0 0 0 1px #fff;
+    color: #fff;
+}
+
+.dark input[type="button"]:hover,
+.dark input[type="submit"]:hover,
+.dark input[type="reset"]:hover,
+.dark button:hover,
+.dark .button:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.dark input[type="button"].alt,
+.dark input[type="submit"].alt,
+.dark input[type="reset"].alt,
+.dark button.alt,
+.dark .button.alt {
+    background: none;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.dark input[type="button"].alt:hover,
+.dark input[type="submit"].alt:hover,
+.dark input[type="reset"].alt:hover,
+.dark button.alt:hover,
+.dark .button.alt:hover {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: inset 0 0 0 1px;
+}
+
+
+/* Feature Icon */
+
+.feature-icon {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5em;
+    margin-bottom: 2.75em;
+    cursor: default;
+}
+
+.feature-icon .icon {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    font-size: 4.5em;
+    border-radius: 100%;
+    box-shadow: inset 0 0 0 1px #666;
+    color: #666;
+    line-height: 2.1em;
+}
+
+.feature-icon:before {
+    content: '';
+    background: #666;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -0.325em;
+    width: 0.65em;
+    height: 0.65em;
+    display: block;
+    border-radius: 100%;
+}
+
+.feature-icon:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0.65em;
+    width: 1px;
+    height: 4.35em;
+    background: #666;
+    margin-left: -0.5px;
+}
+
+.dark .feature-icon .icon {
+    background: yellow;
+    box-shadow: inset 0 0 0 4px gray;
+    color: #fff;
+}
+
+.dark .feature-icon:before,
+.dark .feature-icon:after {
+    background: blue;
+}
+
+
+/* Icons */
+
+.icon {
+    text-decoration: none;
+}
+
+.icon:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 1.25em;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.icon>.label {
+    display: none;
+}
+
+
+/* Header */
+
+#header {
+    position: relative;
+    margin: 0;
+    background-size: auto, cover;
+    background-position: top left, center center;
+    background-repeat: repeat, no-repeat;
+    padding: 14em 0 14em 0;
+    text-align: center;
+}
+
+#header header h1 {
+    font-size: 2.25em;
+    line-height: 1.25em;
+    margin-bottom: 0;
+}
+
+#header header p {
+    margin-top: 1.25em;
+    font-weight: 100;
+    padding: 0;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+#header footer {
+    padding-top: 1.5em;
+}
+
+
+/* Main Sections */
+
+.main {
+    position: relative;
+    margin: 0;
+}
+
+.main>header {
+    background: lightblue;
+    text-align: center;
+    padding: 5em 0 5em 0;
+    margin: 0;
+}
+
+.main>header h2 {
+    font-size: 2.25em;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+.main>header p {
+    margin: 2em 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main>.content {
+    padding: 6em 0 6em 0;
+}
+
+.main>.content h3 {
+    font-size: 1.5em;
+}
+
+.main>.content.dark {
+    background: #433;
+}
+
+.main>.content.style1 {
+    background: lightgreen;
+}
+
+.main>.content.style4 {
+    padding-top: 0;
+    background: #fff;
 }
