@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Messaround</title>
+    <style>
+        #myDIV {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: mymove 1s infinite;
+        }
+        
+        @keyframes mymove {
+            from {
+                left: 0px;
+            }
+            to {
+                left: 200px;
+            }
+        }
+        
+        @keyframes mynewmove {
+            from {
+                top: 0px;
+            }
+            to {
+                top: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<h1>Let's learn javascript!</h1>
+<h2>How do we do onclick events and alerts?</h2>
+<a href="https://www.eastsideprep.org/" target="blank" onclick="alert('warning! you are navigating away from my page')">go to my school</a>
+<br>
+<br>
+<br>
+<!--challenge #1 - do your own link with alert-->
+<a href="https://www.nba.com/" target="blank" onclick="alert('You are following the NBA')">Following NBA</a>
+
+
+<h2>How do I change HTML content with javascript?</h2>
+<h2>What's my secret identity?</h2>
+<p id="secret"></p>
+<button onclick="document.getElementById('secret').innerHTML='Nana nana nana, Batman!';document.getElementById('secret').style.display='block'">Reveal!</button>
+
+<button onclick="document.getElementById('secret').style.display='none'">Hide!</button>
+
+<!--challenge #2 - do your own 2 truth ans a lie-->
+
+<h2>Two truths and a lie!</h2>
+<ul>
+    <li>I have a pet dog thats 1year old</li>
+    <li>I play the violin for 7 years</li>
+    <li>I run 6 times a week</li>
+</ul>
+<p id="Lie"></p>
+<button onclick="document.getElementById('Lie').innerHTML='I run 6 times a week';document.getElementById('Lie').style.display='block'">Reveal!</button>
+
+<button onclick="document.getElementById('Lie').style.display='none'">Hide!</button>
+
+
+
+<h2>How do we change html images?</h2>
+
+<!--challenge #3 implement off light button-->
+<button onclick="document.getElementById('myImage').src='Images/pic_bulbon.gif.gif'">Turn on the light</button>
+
+<img id="myImage" src="Images/pic_bulboff.gif.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='Images/pic_bulboff.gif.gif'">Turn off the light</button>
+
+
+
+<h2>How do we change css styles with functions?</h2>
+<p id="alice">Hi. I am Alice</p>
+<button onclick="shrinkAlice()">Cake: Eat me</button>
+<!-- challenge #4 implement drink me - increase font size, change color (e.g. red)-->
+<button onclick="growAlice()">Potion: Drink Me</button>
+
+<script>
+    function shrinkAlice() {
+        let aliceParagraph = document.getElementById('alice');
+        aliceParagraph.style.color = 'blue'
+        aliceParagraph.style.fontSize = '10px'
+    }
+
+    function growAlice() {
+        let aliceParagraph = document.getElementById('alice');
+        aliceParagraph.style.color = 'red'
+        aliceParagraph.style.fontSize = '50px'
+    }
+</script>
+<!--Click button for animation-->
+<p>Click the "Try it" button to change the direction of square.</p>
+<button onclick="myFunction()">Try it</button>
+
+<script>
+    function myFunction() {
+        document.getElementById("myDIV").style.animation = "mynewmove 4s 2";
+    }
+</script>
+
+<div id="myDIV"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2 id="myH2">This is an example h2</h2>
+<p id="myP">This is an example paragraph.</p>
+<p id="myP2">This is also an example paragraph.</p>
+<div id="myDiv">This is an example div.</div>
+<br>
+
+<button type="button" onclick="myFunction1()">Set text color</button>
+
+<script>
+    function myFunction1() {
+        document.getElementById("myH2").style.color = "#ff0000";
+        document.getElementById("myP").style.color = "magenta";
+        document.getElementById("myP2").style.color = "blue";
+        document.getElementById("myDiv").style.color = "lightblue";
+    }
+</script>
+
+</html>
