@@ -24,7 +24,7 @@
         
         .grid-container {
             display: grid;
-            grid-template-rows: 30% 20% 30% 20%;
+            grid-template-rows: 20% 20% 20% 20% 20%;
             grid-template-columns: auto auto;
             gap: 5px 5px;
         }
@@ -44,7 +44,7 @@
         
         .main2 {
             grid-column: 1 / span 2;
-            grid-row: 4;
+            grid-row: 5;
         }
         
         .Pros {
@@ -57,9 +57,19 @@
             grid-row: 3;
         }
         
+        .video {
+            grid-column: 1 / span 2;
+            grid-row: 4;
+        }
+        
         .img1 {
             grid-column: 1 / span 2;
             grid-row: 2;
+        }
+        /*NEW FEATURE(only commenting once, there is another instance of it)*/
+        
+        h2 {
+            text-decoration: underline;
         }
         
         p {
@@ -70,6 +80,11 @@
         th,
         td {
             border: 1px solid black;
+        }
+        /*new element*/
+        
+        h1 {
+            text-shadow: 2px 2px #FF0000;
         }
     </style>
 </head>
@@ -107,7 +122,7 @@
                 accounts for 66% of Washington's net energy today.</p>
         </div>
         <div class="grid-item img1">
-            <img class="centerimg " src="Images/Dam.jpg " alt="A Dam ">
+            <img class="centerimg" src="Images/Dam.jpg" alt="A Dam ">
         </div>
         <div class="grid-item Pros">
             <h2 class="center">Pros</h2>
@@ -133,17 +148,22 @@
                 Dams can damage the wildlife and ecosystems around it.
             </li>
         </div>
+        <!--The video does not seem to load everytime-->>
+        <div class="grid-item video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/q8HmRLCgDAI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
         <div class="grid-item main2">
             <h2>Resources</h2>
-            <li>
-                <a style="color:lightskyblue;" href="https://www.energy.gov/eere/water/hydropower-basics#:~:text=Hydropower%2C%20or%20hydroelectric%20power%2C%20is,of%20total%20U.S.%20electricity%20generation."><u>Overview on Hydro-electric energy</u></a>
-            </li>
-            <li>
-                <a style="color:lightskyblue;" href="https://www.worldwildlife.org/stories/4-species-impacted-by-dams#:~:text=Dams%20prevent%20the%20natural%20highs,egrets%20to%20spot%20their%20prey.&text=All%20river%20dolphins%20need%20freshwater,safe%20migratory%20routes%20to%20survive."><u>Wildlife affected by Dams</u></a>
-            </li>
-            <li>
-                <a style="color: lightskyblue;" href="https://www.eia.gov/state/analysis.php?sid=WA#:~:text=19%2C20-,Electricity,less%20than%201%20megawatt)%20facilities."><u>Washington State Energy Overview</u></a>
-            </li>
+            <p>
+                <a style="color:lightskyblue;" href="https://www.energy.gov/eere/water/hydropower-basics#:~:text=Hydropower%2C%20or%20hydroelectric%20power%2C%20is,of%20total%20U.S.%20electricity%20generation." target="_blank"><u>Overview on Hydro-electric energy</u></a>
+            </p>
+            <p>
+                <a style="color:lightskyblue;" href="https://www.worldwildlife.org/stories/4-species-impacted-by-dams#:~:text=Dams%20prevent%20the%20natural%20highs,egrets%20to%20spot%20their%20prey.&text=All%20river%20dolphins%20need%20freshwater,safe%20migratory%20routes%20to%20survive."
+                    target="_blank"><u>Wildlife affected by Dams</u></a>
+            </p>
+            <p>
+                <a style="color: lightskyblue;" href="https://www.eia.gov/state/analysis.php?sid=WA#:~:text=19%2C20-,Electricity,less%20than%201%20megawatt)%20facilities." target="_blank"><u>Washington State Energy Overview</u></a>
+            </p>
         </div>
     </div>
     <div class="footer ">
