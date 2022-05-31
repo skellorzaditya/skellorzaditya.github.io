@@ -400,7 +400,7 @@ button:focus {
 .paint-area {
     overflow: hidden;
     position: relative;
-    -webkit-transition: background 0.2s, color 0.2s;
+    -webkit-transition: background 0.3s, color 0.2s;
     transition: background 0.2s, color 0.2s;
 }
 
