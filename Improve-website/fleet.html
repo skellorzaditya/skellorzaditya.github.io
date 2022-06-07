@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheels Up</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+
+</head>
+
+
+<body>
+    <section class="header1">
+        <nav>
+            <a href="index.html"><img src="Images/logo.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="fly.html">FLY</a></li>
+                    <li><a href="fleet.html">FLEET</a></li>
+                    <li><a href="lifestyle.html">LIFESTYLE</a></li>
+                    <li>
+                        <a href="contacts.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Wheels Up Fleet</h1>
+    </section>
+
+    <!--Fleet page content-->
+    <section class="fleet">
+
+        <div class="row">
+            <div class="fleet-col">
+                <h3>King Air 350i</h3>
+                <p>With the average private flight in the US being less than 2.5 hours, our exclusive and vast fleet of King Air 350i aircraft provides you with the most economical solution for flying private with up to 8 passengers all year long.</p>
+                <img src="Images/fleetkingair.jpg">
+                <a href="" class="hero-btn blue1-btn">EXPLORE THE KING AIR 350i</a>
+            </div>
+            <div class="fleet-col">
+                <h3>Citation Excel/XLS</h3>
+                <p>Flying farther and faster, ou 8 passenger Citation Excel/XLS aircraft gives you the flexibility to travel to seemingly endless destinations up to 4 hours away-in the comfort of the world's most popular business jet</p>
+                <img src="Images/fleetcitationexcel.jpg">
+                <a href="" class="hero-btn blue1-btn">EXPLORE THE CITATION EXCEL/XLS</a>
+            </div>
+            <div class="fleet-col">
+                <h3>Citation X</h3>
+                <p>One of the fastest civilian jets ever made, our vast fleet of Citation X aircraft offers you a non-stop flight over 6 hours- enabling you to travel privately to distant destinations in less time. Fly non-stop between New York and L.A.
+                    or Miami and San Francisco in approximately 5 hours.</p>
+                <img src="Images/fleetcitationexcel.jpg">
+                <a href="" class="hero-btn blue1-btn">EXPLORE THE CITATION EXCEL/XLS</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Footer-->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>News</p>
+        <br>
+        <p>Our Story</p>
+        <br>
+        <p>Our Safety</p>
+        <br>
+        <p>Out Leadership</p>
+        <br>
+        <p>Investors</p>
+        <br>
+        <p>Privacy Policy</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+
+
+    </section>
+
+
+
+    <!--JavaScript for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheels Up</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+
+</head>
+
+
+<body>
+    <section class="header0">
+        <nav>
+            <a href="index.html"><img src="Images/logo.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="fly.html">FLY</a></li>
+                    <li><a href="fleet.html">FLEET</a></li>
+                    <li><a href="lifestyle.html">LIFESTYLE</a></li>
+                    <li><a href="contacts.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Fly</h1>
+        <p>The largest private aircraft marketplace in the world, is now accessible to you.</p>
+    </section>
+
+    <!--Fly page content-->
+    <section class="fly">
+        <div class="row">
+            <div class="fly-col">
+                <h1>Search</h1>
+                <p>Acessing our fleet of owned, leased, managed and partner aircraft, spanning five catagories-King Air 350i and light, Midsize, Super-Mid, and Large-Cabin Jets-means flying private on the aircraft that best suits you and whatever your travel
+                    brings.
+                </p>
+                <a href="" class="hero-btn blue-btn">FLY NOW</a>
+            </div>
+
+            <div class="fly-col">
+                <img src="Images/flysearch.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="fly-col">
+                <h1>Price</h1>
+                <p>With our dynamic pricing model, we've made flying private more cost-effective than ever. Our proprietary technology combined with out fleet of 1,500+ aircraft, gives you the best available trip pricing across all aircraft categories, based
+                    on your exact travel dates and times.
+                </p>
+                <a href="" class="hero-btn blue-btn">FLY NOW</a>
+            </div>
+
+            <div class="fly-col">
+                <img src="Images/flypricing.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="fly-col">
+                <h1>Book</h1>
+                <p>Whether you're traveling in a few days or next month, you can fly private with Wheels Up wheneveryou want and on the aircraft you want.Consider the King Air 350i for your hour-ling flights, a Large Cabin Jet for coast-to-coast travel,
+                    or Midsize nad Super-Midsize Kets for everything in between.
+                </p>
+                <a href="" class="hero-btn blue-btn">FLY NOW</a>
+            </div>
+
+            <div class="fly-col">
+                <img src="Images/flybook.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="fly-col">
+                <h1>Fly</h1>
+                <p>Arrive for your Wheels Up private flight at the airport of your choice only 20 minutes before your selected departure time. Then sit back and enjoy our world-class service as you fly to your chosen destination and land at one of 5,000+
+                    airports acessible to you.
+                </p>
+                <a href="" class="hero-btn blue-btn">FLY NOW</a>
+            </div>
+
+            <div class="fly-col">
+                <img src="Images/flyfly.png">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Footer-->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>News</p>
+        <br>
+        <p>Our Story</p>
+        <br>
+        <p>Our Safety</p>
+        <br>
+        <p>Out Leadership</p>
+        <br>
+        <p>Investors</p>
+        <br>
+        <p>Privacy Policy</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+
+
+    </section>
+
+
+
+    <!--JavaScript for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheels Up</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+
+</head>
+
+
+<body>
+    <nav>
+        <a href="index.html"><img src="Images/logo.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="fly.html">FLY</a></li>
+                <li><a href="fleet.html">FLEET</a></li>
+                <li><a href="lifestyle.html">LIFESTYLE</a></li>
+                <li><a href="contacts.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <section class="header2">
+
+        <h1>Fly</h1>
+        <p>The largest private aircraft marketplace in the world, is now accessible to you.</p>
+    </section>
+
+    <!--lifestyle page content-->
+
+    <div class="bodyContainer ">
+        <table>
+            <tr>
+                <td style="font-family: Arial; font-size: 20px">
+                    <h3>Signature Events</h3>
+                    <p>From attending the most sought-after pary during Super Bowl weekend, to experiencing unforgettable hospitality and entertainment during Masters week, to soaking up the art scene at Art Basel in Miami, our signature event activations
+                        are one of a kind and available only to Wheels Up Members.</p>
+                </td>
+                <td>
+                    <img src="Images/lifestyleevents.jpg " width="500 " height="400 "></td>
+            </tr>
+            <tr>
+                <td><img src="Images/lifestyleconcierge.jpg " width="500 " height="400 "></td>
+                <td style="font-family: Arial; font-size: 20px">
+                    <h3>Dedicated Concierge</h3>
+                    <p>Designed by and for those who beleive lifestyle should have no limitations, Wheels Down Concierge provides Wheels Up Members with unparalleled acess to leading hospitality and travel expiriences around the world. Through its collaboration
+                        with Four Hundred, a preier lifestyle management and travel firm, members benefit from the support of a full-service concierge and a Virtuoso-affiliated travel agency to expirience the best that every city has to offer.</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="font-family: Arial; font-size: 20px">
+                    <h3>Incomparable Expiriences</h3>
+                    <p>Intimate gathering and private meet-and-greets with Wheels Up Ambassadors who include legendary celebrities, the most popular atheletes, the hottest musical acts, and visionary business leaders provide our members with memories to
+                        last a lifetime.</p>
+                </td>
+                <td>
+                    <img src="Images/lifestyleexpiriences.jpg " width="500 " height="400 "></td>
+            </tr>
+            <tr>
+                <td><img src="Images/lifestylebenefits.jpg " width="500 " height="400 "></td>
+                <td style="font-family: Arial; font-size: 20px">
+                    <h3>Lifestyle Benefits</h3>
+                    <p>Wheels Up Members receive over $35,000 worth of exclusive benefits through our partnership with dozens of the world's preeminent lifestyle brands. Benefits range from a complimentary membership with Inspirato to President's Circle
+                        status with Hertz and everything in between.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!--Footer-->
+
+    <section class="footer ">
+        <h4>About Us</h4>
+        <p>News</p>
+        <br>
+        <p>Our Story</p>
+        <br>
+        <p>Our Safety</p>
+        <br>
+        <p>Out Leadership</p>
+        <br>
+        <p>Investors</p>
+        <br>
+        <p>Privacy Policy</p>
+        <div class="icons ">
+            <i class="fa fa-facebook "></i>
+            <i class="fa fa-twitter "></i>
+            <i class="fa fa-instagram "></i>
+            <i class="fa fa-linkedin "></i>
+        </div>
+
+
+    </section>
+
+
+
+    <!--JavaScript for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks ");
+
+        function showMenu() {
+            navLinks.style.right = "0 ";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px ";
+        }
+    </script>
+
+</body>
+
+
+</html>
